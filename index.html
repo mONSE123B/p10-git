@@ -1,0 +1,687 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>app10 PROYECTO FINAL</title>
+<!-- grupo CSS-->
+<link rel="stylesheet" href="css/app10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
+
+<script src="phonegap.js"></script><!-- necesario*/-->
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('imagenes/estudio-viabilidad.jpg','imagenes/funcionamiento_interno_y_comunicacion_entre_clases.png','imagenes/polimorfismo_medios_de_transporte.png','imagenes/esquema-herencia-soportes.gif','imagenes/herencia.png','imagenes/T12Dib04.gif','imagenes/image21.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>DSAUPO</h1>
+  </div>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/abstraccin.png" alt="abstracción" title="abstracción" id="wows1_0"/></li>
+		<li><img src="data1/images/admira_grafico.png" alt="admira_grafico" title="admira_grafico" id="wows1_1"/></li>
+		<li><img src="data1/images/ciclo.png" alt="CICLO" title="CICLO" id="wows1_2"/></li>
+		<li><img src="data1/images/esquemaherenciasoportes.jpg" alt="esquema-herencia-soportes" title="esquema-herencia-soportes" id="wows1_3"/></li>
+		<li><img src="data1/images/herencia.png" alt="herencia" title="herencia" id="wows1_4"/></li>
+		<li><img src="data1/images/vida_de_un_sistema.png" alt="vida de un sistema" title="vida de un sistema" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/instanciasbasedatos.png" alt="wowslideshow" title="instancias-base-datos" id="wows1_6"/></a></li>
+		<li><img src="data1/images/jerarquia.jpg" alt="jerarquia" title="jerarquia" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="abstracción"><span><img src="data1/tooltips/abstraccin.png" alt="abstracción"/>1</span></a>
+		<a href="#" title="admira_grafico"><span><img src="data1/tooltips/admira_grafico.png" alt="admira_grafico"/>2</span></a>
+		<a href="#" title="CICLO"><span><img src="data1/tooltips/ciclo.png" alt="CICLO"/>3</span></a>
+		<a href="#" title="esquema-herencia-soportes"><span><img src="data1/tooltips/esquemaherenciasoportes.jpg" alt="esquema-herencia-soportes"/>4</span></a>
+		<a href="#" title="herencia"><span><img src="data1/tooltips/herencia.png" alt="herencia"/>5</span></a>
+		<a href="#" title="vida de un sistema"><span><img src="data1/tooltips/vida_de_un_sistema.png" alt="vida de un sistema"/>6</span></a>
+		<a href="#" title="instancias-base-datos"><span><img src="data1/tooltips/instanciasbasedatos.png" alt="instancias-base-datos"/>7</span></a>
+		<a href="#" title="jerarquia"><span><img src="data1/tooltips/jerarquia.jpg" alt="jerarquia"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slideshow</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+  <div data-role="main" class="ui-content">
+  <div>
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+     <a href="#page2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Ciclo de vida de un sistema de información</h2>
+     </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+     <a href="#page3" class="ui-btn ui-btn-icon-right ui ui-icon-carat-r">
+    <h2>Delimitación/Estudio/Análisis</h2>
+     </a>
+     <a href="#page4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Programación Orientada a Objetos</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#page13" class="ui-btn ui-btn-icon-right ui ui-icon-carat-r">
+    <h2>Elaboración de Manuales</h2>
+     </a>
+   <li class="ui-first-child ui-last-child">
+     <a href="#page12" class="ui-btn ui-btn-icon-right ui ui-icon-carat-r">
+    <h2>Datos del Desarrollador</h2>
+     </a>
+  </li>
+  </ul>
+ </div>
+ </div>
+ 
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <h4> Monserrat Chantes Morales </h4>
+      <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+<div data-role="page" id="page2" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Ciclo de vida de un sistema de información</h1>
+  </div>
+      <DIV>
+      <img src="imagenes/CICLO.png" width="100%" height="90%">
+<div data-role="collapsible" data-theme="false">
+      <H1>Planificación </H1>
+      Realizar una serie de tareas previas que influirán decisivamente en la finalización con    éxito del proyecto.</div>
+       <div data-role="collapsible" data-theme="false">
+      <H1>Análisis </H1>Averiguar qué es exactamente lo que tiene que hacer el sistema. La etapa de análisis en el ciclo de vida del software corresponde al proceso mediante el cual se intenta descubrir qué es lo que realmente se necesita y se llega a una comprensión adecuada de los requerimientos del sistema.</div>
+      <div data-role="collapsible" data-theme="false">
+      <H1>Diseño</H1>Se han de estudiar posibles alternativas de implementación para el sistema de información que hemos de construir y se ha de decidir la estructura general que tendrá el sistema (su diseño arquitectónico). El diseño de un sistema es complejo y el proceso de diseño ha de realizarse de forma iterativa.</div>
+      <div data-role="collapsible" data-theme="false">
+      <H1>Implementación</H1>Seleccionar las herramientas adecuadas, un entorno de desarrollo que facilite nuestro trabajo y un lenguaje de programación apropiado para el tipo de sistema que vayamos a construir. La elección de estas herramientas dependerá en gran parte de las decisiones de diseño que hayamos tomado hasta el momento y del entorno en el que nuestro sistema deberá funcionar</div>
+      <div data-role="collapsible" data-theme="false">
+      <H1>Pruebas</H1>Tiene como objetivo detectar los errores que se hayan podido cometer en las etapas anteriores del proyecto (y, eventualmente, corregirlos). La búsqueda de errores que se realiza en la etapa de pruebas puede adaptar distintas formas, en función del contexto y de la fase del proyecto.</div>
+      <div data-role="collapsible" data-theme="false">
+      <H1>Instalación o despliegue</H1>Debemos de planificar el entorno en el que el sistema debe funcionar, tanto hardware como software: equipos necesarios y su configuración física, redes de interconexión entre los equipos y de acceso a sistemas externos, sistemas operativos y bibliotecas.
+Estas etapas son un reflejo del proceso que se sigue a la hora de resolver cualquier tipo de problema.</div>
+<div data-role="collapsible" data-theme="false">
+<H1>Uso y mantenimiento</H1>
+La etapa de mantenimiento consume típicamente del 40 al 80 por ciento de los recursos de una empresa de desarrollo de software. De hecho, con un 60% de media, es probablemente la etapa más importante del ciclo de vida del software.
+<UL>
+<LI>Eliminar los defectos que se detecten durante su vida útil, lo primero que a uno se le viene a la cabeza cuando piensa en el mantenimiento de cualquier cosa.</LI>
+<LI>Adaptarlo a nuevas necesidades cuando el sistema ha de funcionar sobre una nueva versión del sistema operativo o en un entorno hardware diferente.</LI>
+<LI>Añadirle nueva funcionalidad, cuando se proponen características deseables que supondrían una mejora del sistema ya existente.</LI>
+</UL>
+</div>
+      </DIV>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <h4> Monserrat Chantes Morales</h4>
+         <img src="res/android/mdpi.png" width="56" height="46">
+   </div>
+</div>
+<div data-role="page" id="page3" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1 align="justify">Delimitación/Estudio/Análisis</h1>
+  </div>
+  <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/2980.jpg" alt="2980" title="2980" id="wows1_0"/></li>
+		<li><img src="data1/images/objeto.jpg" alt="objeto" title="objeto" id="wows1_1"/></li>
+		<li><img src="data1/images/relaciones.jpg" alt="relaciones" title="relaciones" id="wows1_2"/></li>
+		<li><img src="data1/images/conceptos.jpg" alt="conceptos" title="conceptos" id="wows1_3"/></li>
+		<li><img src="data1/images/estudioviabilidad.jpg" alt="estudio-viabilidad" title="estudio-viabilidad" id="wows1_4"/></li>
+		<li><img src="data1/images/t12dib04.jpg" alt="T12Dib04" title="T12Dib04" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/clase_coche.png" alt="wowslider.com" title="clase_coche" id="wows1_6"/></a></li>
+		<li><img src="data1/images/+abstraccin++modularidad++encapsulamiento++herencia.jpg" alt="•+Abstracción+•+Modularidad+•+Encapsulamiento+•+Herencia" title="•+Abstracción+•+Modularidad+•+Encapsulamiento+•+Herencia" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="2980"><span><img src="data1/tooltips/2980.jpg" alt="2980"/>1</span></a>
+		<a href="#" title="objeto"><span><img src="data1/tooltips/objeto.jpg" alt="objeto"/>2</span></a>
+		<a href="#" title="relaciones"><span><img src="data1/tooltips/relaciones.jpg" alt="relaciones"/>3</span></a>
+		<a href="#" title="conceptos"><span><img src="data1/tooltips/conceptos.jpg" alt="conceptos"/>4</span></a>
+		<a href="#" title="estudio-viabilidad"><span><img src="data1/tooltips/estudioviabilidad.jpg" alt="estudio-viabilidad"/>5</span></a>
+		<a href="#" title="T12Dib04"><span><img src="data1/tooltips/t12dib04.jpg" alt="T12Dib04"/>6</span></a>
+		<a href="#" title="clase_coche"><span><img src="data1/tooltips/clase_coche.png" alt="clase_coche"/>7</span></a>
+		<a href="#" title="•+Abstracción+•+Modularidad+•+Encapsulamiento+•+Herencia"><span><img src="data1/tooltips/+abstraccin++modularidad++encapsulamiento++herencia.jpg" alt="•+Abstracción+•+Modularidad+•+Encapsulamiento+•+Herencia"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    <div>
+ <div  data-type="vertical" data-theme="a" align="right" style="width:100%;">
+     <a href="#delimitacion" data-role="button" id="">
+    Delimitación del ámbito del proyecto
+     </a>
+ </div>
+  <div  data-type="vertical" data-theme="a" align="right" style="width:100%;">
+     <a href="#estudio" data-role="button" id="">
+    Estudio de viabilidad
+     </a>
+ </div>
+  <div  data-type="vertical" data-theme="a" align="right" style="width:100%;">
+     <a href="#analisis" data-role="button" id="">
+    Análisis de riesgos
+     </a>
+ </div>
+ <div  data-type="vertical" data-theme="a" align="right" style="width:100%;">
+     <a href="#ciclodevida" data-role="button" id="">
+    Ciclo de Vida Clásico de un sistema
+     </a>
+ </div>
+ </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <h4> Monserrat Chantes Morales</h4>
+         <img src="res/android/mdpi.png" width="56" height="46">
+   </div>
+</div>
+<div data-role="page" id="ciclodevida" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Ciclo de Vida de un Sistema</h1>
+</div>
+<div data-role="content" align="center">
+  <img src="imagenes/vida de un sistema.png" width="100%" height="80%"></div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="56" height="46">
+</div>
+<h4>app10-CHMM</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="delimitacion" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Delimitación del ámbito del proyecto </h1>
+</div>
+<div data-role="content" align="center">
+<p align="center">Determinar los aspectos abarcados por el proyecto como fijar aquéllos aspectos que no se incluirán en el proyecto. Estos últimos han de indicarse explícitamente. Si es necesario, se puede especificar todo aquello que se posponga hasta una versión posterior del sistema.</p>
+<img src="imagenes/imagesCAE15214.jpg" width="90%" height="90%"> </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="56" height="46">
+</div>
+<h4>app10-CHMM</h4>
+</div>
+</div>
+
+<div data-role="page" id="estudio" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Estudio de viabilidad</h1>
+</div>
+<div data-role="content" align="center">
+<p align="center">Con recursos ilimitados (tiempo y dinero), casi cualquier proyecto se podría llevar a buen puerto. Por desgracia, en la vida real los recursos son más bien escasos, por lo que no todos los proyectos son viables.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/estudio-viabilidad.jpg',1)"><img src="imagenes/ESTUDIO.jpg" width="90%" height="70%" id="Image19"></a></div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="56" height="46">
+</div>
+<h4>app10-CHMM</h4>
+</div>
+</div>
+
+<div data-role="page" id="analisis" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Análisis de riesgos</h1>
+</div>
+<div data-role="content" align="center">
+<p align="center">Siempre se produce algún contratiempo que eche por tierra la mejor de las planificaciones. Es algo inevitable con lo que hemos de vivir y para lo cual disponemos de una herramienta extremadamente útil: la gestión de riesgos, que tradicionalmente se descompone en evaluación de riesgos y control de riesgos.</p>
+<img src="imagenes/admira_grafico.png" width="90%" height="70%">
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+<img src="res/android/mdpi.png" width="56" height="46">
+</div>
+<h4>app10-CHMM</h4>
+</div>
+</div>
+<div data-role="page" id="page4" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1> Programación Orientada a Objetos </h1>
+  </div>
+    <div>
+    <p align="justify">La programación orientada a objetos (POO, u OOP según sus siglas en inglés) es un paradigma de programación que viene a innovar la forma de obtener resultados. Los objetos manipulan los datos de entrada para la obtención de datos de salida específicos, donde cada objeto ofrece una funcionalidad especial.
+ <A href="https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos#Introducci%C3%B3n" target="_self">
+ver más</a></p>
+    </div>
+    
+    <div data-role="main" class="ui-content">
+  <div>
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+     <a href="#page5" class="ui-btn ui-btn-icon-right ui ui-icon-carat-r">
+    <h2> Objetos</h2>
+     </a>
+     <a href="#page6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Clase</h2>
+     </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+     <a href="#page7" class="ui-btn ui-btn-icon-right ui ui-icon-carat-r">
+    <h2>Abstracción</h2>
+     </a>
+     <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Encapsulamiento</h2>
+     </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+     <a href="#page9" class="ui-btn ui-btn-icon-right ui ui-icon-carat-r">
+    <h2> Herencia</h2>
+     </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#page10" class="ui-btn ui-btn-icon-right ui ui-icon-carat-r">
+    <h2>Polimorfismo </h2>
+     </a>
+   </li>
+   <div  data-type="vertical" data-theme="b" align="right" style="width:100%;">
+     <a href="#page11" data-role="button" >
+    <h4>Otras características</h4>
+     </a>
+ </div>
+ <div  data-type="vertical" data-theme="b" align="right" style="width:100%;">
+     <a href="#page14" data-role="button" >
+    <h4>curso Programación en Visual Basic</h4>
+     </a>
+ </div>
+  </ul>
+ </div>
+ </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <h4> Monserrat Chantes Morales</h4>
+         <img src="res/android/mdpi.png" width="56" height="46">
+   </div>
+</div>
+<div data-role="page" id="page14" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>curso Programación en Visual Basic</h1>
+  </div>
+    <div>
+    <br>
+    <p align="center">
+<A href="https://www.youtube.com/watch?v=zt29PaBvyTw&t=235s" target="_self">
+Programación orientada a objetos POO</a></p>
+    <img src="imagenes/2010.png" width="100%" height="70%"> </div>
+ 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <h4> Monserrat Chantes Morales</h4>
+         <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+<div data-role="page" id="page5" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Objetos</h1>
+  </div>
+    <div>
+    <p align="center">Un objeto contiene toda la información que permite definirlo e identificarlo frente a otros objetos pertenecientes a otras clases e incluso frente a objetos de una misma clase, al poder tener valores bien diferenciados en sus atributos. </p>
+    <img src="imagenes/objeto.jpg" width="100%" height="80%" >
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-theme="false">
+ <h1>OBJETO</h1>
+ <div>
+ <UL>
+ <LI> ATRIBUTOS (estado) <BR>
+ Son características que definen al objeto: datos.</LI>
+ <LI> METODOS (comportamiento) <BR>Son acciones, operaciones que sirven para modificar los datos que están relacionados con el objeto.</LI>
+ </UL>
+ <br>
+ 
+ <H5>TEMAS  RELACIONADO</H5>
+<A href="http://paginawebleon.mx/wp/programacion-orientada-a-objetos-poo/" target="_self">
+Programación orientada a objetos POO</a>
+ </div>
+ </div>
+ </div>
+    </div>
+   <div data-role="main" class="ui-content">
+     <div>
+     <h2>  </h2>
+    </div>
+   </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <h4> Monserrat Chantes Morales </h4>
+      <img src="res/android/mdpi.png" width="56" height="46">
+     </div>
+</div>
+<div data-role="page" id="page6" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1> Clase</h1>
+  </div>
+      <p align="center"> Una clase se puede definir de las propiedades y comportamiento de un tipo de objeto concreto. La instanciación es la lectura de estas definiciones y la creación de un objeto a partir de ella.</p>
+      <img src="imagenes/CLASE.png" width="100%" height="90%">
+      <img src="imagenes/clas1.png" width="100%" height="90%">
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <h4> Monserrat Chantes Morales</h4>
+         <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+
+<div data-role="page" id="page7" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Abstracción </h1>
+  </div>
+    <p align="center">La abstracción es una especificación del sistema que enfatiza sobre algunos de los detalles o propiedades del mismo mientras suprime a otros. Una buena abstracción es aquella que enfatiza sobre detalles significativos al lector y al usuario y suprime detalles que son al menos por el momento irrelevantes o que causan distracción.</p>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('image34','','imagenes/T12Dib04.gif',1)"><img src="imagenes/abstracción.png" width="100%" height="70%" id="image34"></a>
+<div>
+</div>
+      
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <h4> Monserrat Chantes Morales</h4>
+         <img src="res/android/mdpi.png" width="56" height="46">
+   </div>
+</div>
+<div data-role="page" id="page8" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1> Encapsulamiento</h1>
+  </div>
+    <div>
+    <p align="center">Es la cualidad de restringir el acceso y ocultar el proceso de cada uno de los datos miembro de una clase y sólo podrán cambiar mediante las operaciones definidas para ese espacio. El aislamiento protege contra la modificación y garantiza el flujo del programa. Una clase y un método funcionan como cápsula. En una pantalla, nosotros solo vemos la imagen, y no conocemos lo que se procese dentro,</p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/funcionamiento_interno_y_comunicacion_entre_clases.png',1)"><img src="imagenes/pantalla.jpg" width="90%" height="80%" id="Image26"></a></div>
+      
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <h4> Monserrat Chantes Morales</h4>
+         <img src="res/android/mdpi.png" width="56" height="46">
+   </div>
+</div>
+<div data-role="page" id="page9" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1> Herencia</h1>
+  </div>
+  <div><p align="center"> Es la propiedad de que unos objetos sean creados a partir de otros ya existentes en proporción a una relación entre una clase general y una más específica. <br> En la imagen se puede apreciar una superclase llamada Animales, que describe todos aquellos objetos animados clasificados como seres vivos, las subclases se encuentran en el segundo nivel y denotan características más específicas de los animales por su hábitat, estructura ósea, alimentación, etc. En la clase Acuáticos, podremos apreciar dos subclases, Ríos y Océanos. Un animal de Ríos tendrá las características de un animal Acuático heredando las características de la superclase Animal.</p>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image33','','imagenes/herencia.png',1)"><img src="imagenes/esquema-herencia-soportes.gif" width="450" height="213" id="Image33"></a> </div>
+      
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <h4> Monserrat Chantes Morales</h4>
+         <img src="res/android/mdpi.png" width="56" height="46">
+   </div>
+</div>
+<div data-role="page" id="page10" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1> Polimorfismo</h1>
+  </div>
+    <div><p align="center">Es la capacidad de crear objetos con diferentes formas donde la clase se comporta como una entidad donde puede procesar diferentes valores durante la ejecución del programa. <p>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','imagenes/polimorfismo_medios_de_transporte.png',1)"><img src="imagenes/2980.gif" width="100%" height="80%"id="Image32"></a>     
+    </div>
+ 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <h4> Monserrat Chantes Morales</h4>
+         <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+<div data-role="page" id="page11" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1 align="center">Otras Características </h1>
+  </div>
+  <div>
+    <div align="center">
+      <ul>
+        <li><B>Sobrecarga de métodos</B></li>
+      </ul>
+    </div>
+    <p align="justify">Es la capacidad de nombrar dos o más métodos con el mismo identificador pero definidas para diferentes propósitos. Lo único que hará la diferencia, son los parámetros que reciba    </p>
+    <div align="center">
+      <ul>
+        <li><B>Modularidad</B></li>
+      </ul>
+      <p align="justify">Consiste en dividir el programa en fracciones más pequeñas de código de nombre módulos. Cada módulo debe ser independiente de otro.</p>
+      <img src="imagenes/modularidad.png" width="100%" height="80%">
+    </div>
+    <div align="center">
+      <ul>
+        <li><B>Jerarquía</B></li>
+      </ul>
+      <p align="justify">Es una propiedad que permite ordenar las abstracciones.</p>
+    <img src="imagenes/jerarquia.jpg" width="100%" height="80%"></div>
+    <div align="center">
+      <ul>
+        <li><B>Instancia</B></li>
+      </ul>
+      <p align="justify">Una instancia es la declaración de un medio por el que se accederán a los datos miembro permitidos de una clase desde fuera de ésta. Un objeto es una instancia de una clase y se pueden tener muchas al mismo tiempo con características propias.</p>
+    <img src="imagenes/instancias-base-datos.png" width="100%" height="80%"></div>
+    <div align="center">
+      <ul>
+        <li><B>Relaciones entre clases</B></li>
+      </ul>
+      <p align="justify">Se refiere a los mensajes que se comparten entre dos clases y la comunicación entre los objetos. Las relaciones pueden ser de uno a uno, uno a muchos, muchos a uno y muchos a muchos</p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image35','','imagenes/image21.jpg',1)"><img src="imagenes/relaciones.jpg" width="90%" height="70%" id="Image35"></a> </div>
+    
+    
+  </div>
+      
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <h4 align="center"> Monserrat Chantes Morales</h4>
+         <div align="center"><img src="res/android/mdpi.png" width="56" height="46">
+         </div>
+   </div>
+</div>
+<div data-role="page" id="page12" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Datos del Desarrollador </h1>
+  </div>
+      
+      <div>
+        <table width="100%" height="80%" border="1">
+          <tr>
+            <td>Nombre del alumno</td>
+            <td class="table-stripe"> 
+     
+     <img src="imagenes/21414734_853445128137262_7567012693783098173_o.jpg" width="70%" height="20%">
+     <p> Chantes Morales Monserrat</p>
+     
+            </td>
+          </tr>
+          <tr>
+            <td>Semestre y Grupo</td>
+            <td>4º &quot;H&quot;</td>
+          </tr>
+          <tr>
+            <td>Submodulo</td>
+            <td>Desarrolla Aplicaciones Móviles</td>
+          </tr>
+          <tr>
+            <td>Nombre del Docente</td>
+            <td>Lic. José Antonio Gómez Hernández </td>
+          </tr>
+          <tr>
+            <td>Actividad</td>
+            <td>app10-Proyecto Final</td>
+          </tr>
+        </table>
+      </div>
+      
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <h4> Monserrat Chantes Morales</h4>
+         <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+<div data-role="page" id="page13" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1> Manuales</h1>
+  </div>
+      <div>
+        <table width="100%" height="82%" border="1">
+          <tr>
+            <td width="51%" height="27">USUARIO <a href="http://www.javeriana.edu.co/documents/10179/56863/MANUAL+DE+USUARIO+VINCULACION+DE+EMPRESAS.pdf/020751e5-5304-4f59-b7d2-116cfd1c0835" target="_self">ver ejemplo</a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><ol style="margin: 0.3em 0px 0px 3.2em; padding: 0px; list-style-image: none; color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+              <li style="margin-bottom: 0.1em;">
+                <div align="left">Una página de <a href="https://es.wikipedia.org/wiki/Portada_(libro)" class="mw-redirect" title="Portada (libro)" style="text-decoration: none; color: rgb(11, 0, 128); background: none;">portada</a>.
+                </div>
+              </li>
+              <li style="margin-bottom: 0.1em;">
+                <div align="left">Una página de <a href="https://es.wikipedia.org/wiki/T%C3%ADtulo" class="mw-disambig" title="Título" style="text-decoration: none; color: rgb(11, 0, 128); background: none;">título</a>.</div>
+              </li>
+              <li style="margin-bottom: 0.1em;">
+                <div align="left">Una página de <a href="https://es.wikipedia.org/wiki/Derechos_de_autor" class="mw-redirect" title="Derechos de autor" style="text-decoration: none; color: rgb(11, 0, 128); background: none;">derechos de autor</a>.</div>
+              </li>
+              <li style="margin-bottom: 0.1em;">
+                <div align="left">Un <a href="https://es.wikipedia.org/wiki/Prefacio" class="mw-disambig" title="Prefacio" style="text-decoration: none; color: rgb(11, 0, 128); background: none;">prefacio</a>, que contiene detalles de los documentos relacionados y la información sobre cómo navegar por la guía del usuario.</div>
+              </li>
+              <li style="margin-bottom: 0.1em;">
+                <div align="left">Una sección de <strong>introducción</strong>, que incluye:
+                  <ol style="margin: 0.3em 0px 0px 3.2em; padding: 0px; list-style-image: none;">
+                    <li style="margin-bottom: 0.1em;">Una breve descripción del sistema y su finalidad.</li>
+                    <li style="margin-bottom: 0.1em;">Una sección de <strong>novedades</strong> desde la última versión.</li>
+                  </ol>
+                </div>
+              </li>
+              <li style="margin-bottom: 0.1em;">
+                <div align="left">Una sección de <strong>requisitos previos</strong> necesarios para usar el sistema, que incluye:
+                  <ol style="margin: 0.3em 0px 0px 3.2em; padding: 0px; list-style-image: none;">
+                    <li style="margin-bottom: 0.1em;">Conocimientos mínimos del usuario</li>
+                    <li style="margin-bottom: 0.1em;">Requisitos técnicos previos, incluyendo:
+                      <ol style="margin: 0.3em 0px 0px 3.2em; padding: 0px; list-style-image: none;">
+                        <li style="margin-bottom: 0.1em;">Capacidades técnicas mínimas del equipo</li>
+                        <li style="margin-bottom: 0.1em;">Software asociado necesario</li>
+                      </ol>
+                    </li>
+                    <li style="margin-bottom: 0.1em;">Mecanismo para acceder al sistema</li>
+                  </ol>
+                </div>
+              </li>
+              <li style="margin-bottom: 0.1em;">
+                <div align="left">Una sección de <strong>instalación</strong> y <strong>configuración</strong></div>
+              </li>
+              <li style="margin-bottom: 0.1em;">
+                <div align="left">Una guía sobre cómo utilizar al menos las principales funciones del sistema, es decir, sus <strong>funciones básicas</strong>.</div>
+              </li>
+              <li style="margin-bottom: 0.1em;">
+                <div align="left">Una sección de <strong>solución de problemas</strong> que detalla los posibles errores o problemas que pueden surgir, junto con la forma de solucionarlos.</div>
+              </li>
+              <li style="margin-bottom: 0.1em;">
+                <div align="left">Una sección de <strong>preguntas frecuentes</strong>.</div>
+              </li>
+              <li style="margin-bottom: 0.1em;">
+                <div align="left">Dónde encontrar más ayuda, y datos de contacto.</div>
+              </li>
+              <li style="margin-bottom: 0.1em;">
+                <div align="left">Un <a href="https://es.wikipedia.org/wiki/Glosario" title="Glosario" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" bgcolor="none">Glosario</a> y, para documentos más grandes, un <a href="https://es.wikipedia.org/wiki/%C3%8Dndice" title="Índice" style="text-decoration: none; color: rgb(11, 0, 128); background: none;" bgcolor="none">Índice</a>.</div>
+              </li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="1">
+          <tr>
+            <td align="left" valign="middle">TECNICO <a href="http://www.nenek.mx/nenekdev/SAAC/download/Manual%20Tecnico%20Nenek-SAAC.pdf" target="_self">ver ejemplo </a> </td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle"><div>
+              <div align="center"><strong><u><span lang="ES-EC">1. Índice</span></u></strong></div>
+            </div>
+              <div>
+                <div align="center"><span lang="ES-EC">Relación de los capítulos y páginas correspondientes que forman parte del documento</span></div>
+              </div>
+              <div>
+                <div align="center"><strong><u><span lang="ES-EC">2. Introducción.</span></u></strong></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">Se debe presentar una breve descripción del sistema desarrollado, que contemple el ámbito abarcado, cual es su función principal y un detalle de las funciones macros o partes que lo componen. Puede incluir un mensaje de la máxima autoridad de las áreas comprendidas en el manual.</span></div>
+              </div>
+              <div>
+                <div align="center"><strong><u><span lang="ES-EC">2.1. Objetivo general del sistema</span></u></strong></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">Se debe de describir el objetivo general del sistema.</span></div>
+              </div>
+              <div>
+                <div align="center"><strong><u><span lang="ES-EC">2.2. Objetivos específicos</span></u></strong></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">Se deben describir brevemente los objetivos específicos que se cumplieron con el desarrollo del sistema.</span></div>
+              </div>
+              <div>
+                <div align="center"><strong><u><span lang="ES-EC">3. Contenido técnico</span></u></strong></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">3.1. Definición de reglas del negocio implementadas en el sistema desarrollado.</span></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">3.2. Diagramas de flujo de datos, junto con su respectivo diccionario de datos.</span></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">3.3. Controles de auditoria implementados en el sistema.</span></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">3.4. Descripción de campos requeridos por pantalla con presentación de pantallas.</span></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">3.5. Diagrama de navegación del sistema.</span></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">3.6. Requerimientos de interfase con otros sistemas.</span></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">3.7. Modelo lógico de datos, diagrama entidad-relación.</span></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">3.8. Modelo de datos físico, junto con su respectivo diccionario de datos.</span></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">3.9. Matriz de procesos versus organización.</span></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">3.10. Matriz de programas versus entidades.</span></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">3.11. Plataforma de usuario. Aquí se describen los requerimientos mínimos que se deben tener tanto de hardware como de software para que el sistema se pueda instalar y ejecutar correctamente (en caso de que se considere necesario).</span></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">3.12. Áreas de aplicación y/o alcance de los procedimientos. Esfera de acción que cubren los procedimientos</span></div>
+              </div>
+              <div>
+                <div align="center"><strong><u><span lang="ES-EC">4. Responsables.</span></u></strong></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">4.1. Mapa de navegación. muestra de forma gráfica la interconexión entre cada una de las pantallas del sistema, lo que serviría para saber como llegar a determinada parte de la aplicación. En este se muestran los menús, submenús y pantallas a las que nos lleva cada uno de ellos</span></div>
+              </div>
+              <div>
+                <div align="center"><span lang="ES-EC">4.2. Descripción gráfica del mapa de navegación. En el anterior aparece de forma de diagrama de flujo y en esta sección deberá aparecer ya con las respectivas pantallas.</span></div>
+              </div>
+            <div>
+              <div align="center"><span lang="ES-EC">4.3. Describe paso a paso los procesos, así como pantallas, botones, cuadros de texto, etc., pero también se muestra el código de cada rutina, pantalla, botón, etc. es decir, se muestra lo que hay detrás de la interfaz del usuario </span></div>
+            </div></td>
+          </tr>
+        </table>
+  </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <h4> Monserrat Chantes Morales</h4>
+         <img src="res/android/mdpi.png" width="56" height="46">
+   </div>
+</div>
+    
+</body>
+</html>
+
