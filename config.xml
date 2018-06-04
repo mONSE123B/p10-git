@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>  
+<?xml version="1.0" encoding="UTF-8"?>
+
 <widget xmlns= "http://www.w3.org/ns/widgets"
 xmlns:gap= "http://phonegap.com/ns/1.0"
 id = "com.phonegap.app10"
 version = "1.0.0">
 
-<name> app10 PROYECTO FINAL</name>
+<name>app10 proyecto final</name>
 
 <description>
-PROYECTO FINAL
+DSAUPOO
 </description>
 
-<author href="https://build.phonegap.com" email="cb16.chantes.morales.monserrat@gmail.com">
+<author href="https://build.phonegap.com" email="cb16.chantes.morales.monserat@gmail.com">
 Monserrat Chantes Morales
 </author>
 
@@ -23,12 +24,15 @@ Monserrat Chantes Morales
 <preference name="android-installLocation"	value="auto" />
 <preference name="permissions"				value="INTERNET" />
 
-<!--Para accesar a paginas en internet-->
-<allow-intent href="https://*/*/*"/>
-<access origin="https://*/*/*"/>
+<!--Para accesar a paginas en intenter-->
+<allow-intent href="https://*/*"/>
+<acces origin="https://*/*"/>
 <allow-intent href="http://*/*"/>
-<access origin="http://*/*"/>
+<acces origin="http ://*/*"/>
 <plugin name="cordova-plugin-whitelist" source="npm"/>
+
+
+<!--Plugins-->
 <!--Core plugins-->
 <plugin name="cordova-plugin-device" spec="~1.1.4"/>
 <plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
